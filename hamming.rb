@@ -15,3 +15,7 @@ class Hamming
 		return distance
 	end
 end
+
+module BookKeeping
+	VERSION = 3
+end
