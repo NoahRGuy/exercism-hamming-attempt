@@ -5,7 +5,7 @@ require_relative 'hamming'
 # Common test data version: 1.0.0 bb56dc7
 class HammingTest < Minitest::Test
   def test_identical_strands
-    # skip
+    #skip
     assert_equal 0, Hamming.compute('A', 'A')
   end
 
@@ -25,17 +25,17 @@ class HammingTest < Minitest::Test
   end
 
   def test_small_distance_in_small_strands
-    skip
+    #skip
     assert_equal 1, Hamming.compute('AT', 'CT')
   end
 
   def test_small_distance
-    skip
+    #skip
     assert_equal 1, Hamming.compute('GGACG', 'GGTCG')
   end
 
   def test_small_distance_in_long_strands
-    skip
+    #skip
     assert_equal 2, Hamming.compute('ACCAGGG', 'ACTATGG')
   end
 
