@@ -1,5 +1,6 @@
 class Hamming
 	def self.compute(a, b)
+		raise ArgumentError unless a.length == b.length
 		distance = 0
 		index_of_letter = 0
 		a_comp = a.split('')
